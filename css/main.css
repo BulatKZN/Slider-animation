@@ -39,4 +39,15 @@ body {
     text-transform: uppercase;
     letter-spacing: calc(var(--index) * 1.65);
     margin-bottom: calc(var(--index) *2.3);
+    position: relative;
+}
+
+.slide__content h2::after {
+    content: "";
+    height: 1px;
+    width: 20%;
+    background-color: #fff;
+    position: absolute;
+    left: 40%;
+    bottom: calc(var(--index) *-1);
 }
