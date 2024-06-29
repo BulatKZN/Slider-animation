@@ -46,8 +46,15 @@ body {
     content: "";
     height: 1px;
     width: 20%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .35);
     position: absolute;
     left: 40%;
     bottom: calc(var(--index) *-1);
+}
+
+.slide__content p {
+    font-size: calc(var(--index) *.9);
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: calc(var(--index) * .24);
 }
